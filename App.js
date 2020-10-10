@@ -1,12 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { StyleSheet, Text, View, Image, LogBox } from 'react-native';
+import Login from './components/Login';
+import CreatAcount from './components/CreatAcount';
+import Header from './components/Header';
+import Friend from './components/Friend';
+import AllFriends from './components/AllFriends';
+import SuggestionFriend from './components/SuggestionFriend';
+import VideoTab from './components/VideoTab';
+import SearchVideo from './components/SearchVideo';
+import Test from './components/VideoTab';
 
 export default function App() {
+  
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <VideoTab></VideoTab>
     </View>
   );
 }
@@ -14,8 +24,15 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    
+    
+   // backgroundColor: "#f4fbd2",
+    marginTop: 20,
+    
+    
+    
   },
+  
+  
 });
+
